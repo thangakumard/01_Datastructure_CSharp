@@ -1,0 +1,116 @@
+# Ignore Visual Studio temporary files, build results, and
+# build logs.
+####################
+## Build Results
+####################
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Uncomment if you have tasks that create the following files
+# build-log.xml
+# *.tlog
+
+# Uncomment if you have tasks that create the following files
+# *.log
+
+# Ignore legacy Visual Studio project files
+*.csproj.user
+*.vcxproj.user
+*.vcxproj.filters
+
+####################
+## User-specific files
+####################
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+####################
+## Mono Auto Generated Files
+####################
+mono_crash.*
+
+####################
+## Windows image file caches
+####################
+Thumbs.db
+ehthumbs.db
+
+####################
+## Folder config file
+####################
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+####################
+## Dotnet Configurations
+####################
+# Uncomment if you have tasks that create the following files
+# *.global.json
+# Uncomment if you have tasks that create the following files
+# .dotnettools
+
+# Dotnet Core local tools manifest files
+.dotnet-tools.json
+
+####################
+## VS Code specific files
+####################
+.vscode/
+.vscode/settings.json
+
+####################
+## Rider specific files
+####################
+.idea/
+
+####################
+## NuGet Packages
+####################
+*.nupkg
+# The packages folder can be ignored because of the package restore feature
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be restored as part of install
+# !**/packages/repositories.config
+
+####################
+## Test Results
+####################
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+*.trx
+*.cvr
+*.pdb
+
+####################
+## Other
+####################
+# Backup & report files from converting an old project file t
