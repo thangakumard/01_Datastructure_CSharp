@@ -3,9 +3,19 @@ using System.Collections;
 
 namespace DataTypes
 {
+    /*
+    byte: 8-bit unsigned integer (0 to 255).
+    sbyte: 8-bit signed integer (-128 to 127).
+    short: 16-bit signed integer (-32,768 to 32,767).
+    ushort: 16-bit unsigned integer (0 to 65,535).
+    int: 32-bit signed integer (-2,147,483,648 to 2,147,483,647).
+    uint: 32-bit unsigned integer (0 to 4,294,967,295).
+    long: 64-bit signed integer (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807).
+    ulong: 64-bit unsigned integer (0 to 18,446,744,073,709,551,615).
+    */
 
     [TestClass]
-    public class DataTypeExamples
+    public class ValueTypes
     {
         [TestMethod]
         public void sample01()
@@ -26,15 +36,7 @@ namespace DataTypes
         // Character Type
         char charVar = 'A';
 
-        // String Type
-        string stringVar = "Hello, World!";
-
-        // Array Type
-        int[] intArray = { 1, 2, 3, 4, 5 };
-
-        // Object Type
-        object objVar = "I am an object";
-
+       
         // Output
         Console.WriteLine($"Byte: {byteVar}");
         Console.WriteLine($"Int: {intVar}");
@@ -44,9 +46,6 @@ namespace DataTypes
         Console.WriteLine($"Decimal: {decimalVar}");
         Console.WriteLine($"Boolean: {boolVar}");
         Console.WriteLine($"Char: {charVar}");
-        Console.WriteLine($"String: {stringVar}");
-        Console.WriteLine($"Array First Element: {intArray[0]}");
-        Console.WriteLine($"Object: {objVar}");
         }
     }
 }
