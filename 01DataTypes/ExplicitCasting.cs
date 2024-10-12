@@ -29,6 +29,8 @@ namespace DataTypes
             */
             string str = "123";
             int num = Convert.ToInt32(str);  // Converts string to int
+            num = Convert.ToInt32(null);
+            Console.WriteLine("num is :" + num);
 
             double dbl = 12.34;
             string strDouble = Convert.ToString(dbl);

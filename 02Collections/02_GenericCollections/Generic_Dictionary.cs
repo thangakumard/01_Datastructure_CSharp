@@ -1,12 +1,26 @@
+
 using System;
 using System.Collections;
 
-namespace Collections
+namespace Collections.Generic
 {
 
     [TestClass]
-    public class DictionarySample
+    public class Generic_Dictionary
     {
+        [TestMethod]
+        public void DictionaryKeyasString(){
+            Dictionary<string, int> dictSample = new Dictionary<string, int>();
+            dictSample["a"] = 10;
+            Console.WriteLine("a value is :" + dictSample["a"]);
+
+            int val = dictSample.ContainsKey("b") ? dictSample["b"] : -1;
+            Console.WriteLine("b value is :" + val);
+
+            dictSample["a"]--;
+            Console.WriteLine("Decrement a value :" + dictSample["a"]);
+        }
+
         [TestMethod]
         public void MyArrayList()
         {
