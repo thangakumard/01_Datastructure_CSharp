@@ -11,6 +11,7 @@ namespace Collections.Generic
           Stack<int> stack = new Stack<int>();
             stack.Push(10);
             stack.Push(20);
+
         }
     }
 }

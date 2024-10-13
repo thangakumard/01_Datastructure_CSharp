@@ -37,11 +37,19 @@ namespace DataTypes
         // Array Type
         int[] intArray = { 1, 2, 3, 4, 5 };
 
+        int[] input1 = [1, 2, 3, 4, 5 ];
+        int[] input2 = [6,7,8,9 ];
+        int[] combined =[..input1, ..input2];
+
         // Object Type
         object objVar = "I am an object";
 
             Console.WriteLine($"String: {stringVar}");
             Console.WriteLine($"Array First Element: {intArray[0]}");
+            Console.WriteLine($"Combined Array:");
+            foreach(int i in combined){
+                Console.WriteLine(i);
+            }
             Console.WriteLine($"Object: {objVar}");
         }
     }
