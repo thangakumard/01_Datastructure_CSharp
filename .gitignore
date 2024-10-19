@@ -114,3 +114,4 @@ $RECYCLE.BIN/
 ## Other
 ####################
 # Backup & report files from converting an old project file t
+/.vs
