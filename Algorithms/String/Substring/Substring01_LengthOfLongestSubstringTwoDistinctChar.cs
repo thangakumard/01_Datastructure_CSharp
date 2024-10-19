@@ -1,0 +1,60 @@
+using System;
+using System.Collections;
+
+namespace Algorithms.String.Substring
+{
+
+//https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+
+    [TestClass]
+    public class Substring01_LengthOfLongestSubstringTwoDistinctChar
+    {
+        [TestMethod]
+        public void LengthOfLongestSubstringTwoDistinctChar() {
+            string input = "ccaabbb";
+            int result = GetLengthOfLongestSubstringTwoDistinctChar_usingCounter(input);
+            Assert.AreEqual(5,result);
+        }
+
+         private int GetLengthOfLongestSubstringTwoDistinctChar_usingCounter(string input){
+            int[] counter = new int[126];
+            int left =0, right =0, distinctChar = 0, maxLength = 0;
+            while(right < input.Length){
+                if(counter[input[right]] == 0){
+                    distinctChar++;
+                }
+                counter[input[right]]++;
+                right++;
+                while(distinctChar > 2){
+                    if(counter[input[left]] == 1){
+                        distinctChar--;
+                    }
+                    counter[input[left]]--;
+                    left++;
+                }
+                maxLength = Math.Max(maxLength, right-left);
+            }
+            return maxLength;
+         }
+
+        private int GetLengthOfLongestSubstringTwoDistinctChar_usingHashSet(string input){
+            HashSet<Char> set = new HashSet<char>();
+            int left = 0, right =0, maxLength = 0;
+
+            while(right < input.Length){
+                if(!set.Contains(input[right])){
+                     set.Add(input[right]);
+                }
+                if(set.Count > 2){
+                    set.Remove(input[left]);
+                    left++;
+                }else{
+                    maxLength = Math.Max(maxLength, right-left);
+                    right++;
+                }
+
+            }
+            return maxLength;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace Strings.Substring
+namespace Algorithms.String.Substring
 {
 
 //https://leetcode.com/problems/longest-substring-without-repeating-characters/

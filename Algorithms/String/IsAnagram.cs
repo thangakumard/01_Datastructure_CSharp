@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace Strings
+namespace Algorithms.String
 {
 
     [TestClass]

@@ -15,12 +15,12 @@ namespace Strings.RegularExpression
             String S = "I am a hero";
             String expected = "Iamahero";
             //remove all the whitespace
-            var result = Regex.Replace(S, @"\s+", "");
+            var result = Regex.Replace(S, @"\s", "");
             Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
-        public void String_RemoveSpacechar() {
+        public void String_RemoveSpecialChar() {
             String S = "I_ am@ a @$#$%$her(o";
             String expected = "I am a hero";
             //remove all the spacial char except space
@@ -29,7 +29,7 @@ namespace Strings.RegularExpression
         }
 
         [TestMethod]
-        public void String_RemoveSpacecharAllowSpace() {
+        public void String_RemoveSpecialCharAllowSpace() {
             String S = "I_ am@ a @$#$%$          her(o";
             String expected = "I am a hero";
             

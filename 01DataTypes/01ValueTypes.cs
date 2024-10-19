@@ -36,6 +36,8 @@ namespace DataTypes
         // Character Type
         char charVar = 'A';
 
+        
+
        
         // Output
         Console.WriteLine($"Byte: {byteVar}");

@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace Strings
+namespace Algorithms.String.Substring
 {
 
     [TestClass]
@@ -17,7 +17,7 @@ namespace Strings
         {
             public int Compare(string? a, string? b)
             {
-                String order1 = a + b;
+                string order1 = a + b;
                 string order2 = b + a;
                 return order2.CompareTo(order1);
             }
