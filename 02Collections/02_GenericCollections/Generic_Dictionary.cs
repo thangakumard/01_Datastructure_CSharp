@@ -14,6 +14,8 @@ namespace Collections.Generic
             dictSample["a"] = 10;
             Console.WriteLine("a value is :" + dictSample["a"]);
 
+            int value = dictSample.GetValueOrDefault("a", 20);
+
             int val = dictSample.ContainsKey("b") ? dictSample["b"] : -1;
             Console.WriteLine("b value is :" + val);
 
