@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.BehavioralPattern.StrategyPattern
 {
+    /**
+     * Strategy (Interface): Declares a method (or methods) that all concrete strategies must implement.
+        Concrete Strategies: Implement the algorithm defined in the strategy interface.
+        Context: The class that uses a strategy object, and the strategy can be changed at runtime.
+     */
     [TestClass]
     public class CheckoutPage
     {
