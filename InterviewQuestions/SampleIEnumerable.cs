@@ -32,7 +32,7 @@ namespace DatastructureMSTest.InterviewQuestions
     }
 
     [TestClass]
-    class IEnumerableTest
+    public class IEnumerableTest
     {
         [TestMethod]
         public void TestStudentCollection()
