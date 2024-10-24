@@ -1,11 +1,4 @@
-﻿using DesignPattern.StructuralPattern.DecoratorPattern;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPattern.StructuralPattern.DecoratorPattern.Decorators
+﻿namespace DesignPattern.StructuralPattern.DecoratorPattern.Decorators
 {
     public class MilkDecorator : CoffeeDecorator
     {
