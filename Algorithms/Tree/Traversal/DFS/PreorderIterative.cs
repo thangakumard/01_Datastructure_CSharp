@@ -6,7 +6,7 @@ namespace Algorithms.Tree.Traversal.DFS
     public class PreorderIterative
     {
         [TestMethod]
-        public void PrintInOrder(){
+        public void PrintPreorderIterative(){
             TreeNode root = new TreeNode(40);
             root.Left = new TreeNode(30);
             root.Right = new TreeNode(50);
