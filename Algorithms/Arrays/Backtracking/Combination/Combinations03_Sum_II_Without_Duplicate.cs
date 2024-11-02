@@ -23,7 +23,7 @@ namespace Algorithms.Arrays.Backtracking.Combination
         private List<List<int>> GetCombinationSumII(int[] nums, int sum) {
             List<List<int>> result = new List<List<int>>();
             Array.Sort(nums);
-            BackTrackingHelper(result, nums, new List<int>(), sum, 0);
+            BackTrackingHelper(result, nums, new List<int>(), sum, 0);            
             return result;
          }
 
