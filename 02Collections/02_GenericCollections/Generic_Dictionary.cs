@@ -16,6 +16,8 @@ namespace Collections.Generic
 
             int value = dictSample.GetValueOrDefault("a", 20);
 
+            Console.WriteLine("Access key not available :" + dictSample.GetValueOrDefault("b", 20));
+
             int val = dictSample.ContainsKey("b") ? dictSample["b"] : -1;
             Console.WriteLine("b value is :" + val);
 
